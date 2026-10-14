@@ -1,0 +1,66 @@
+// Qortex brand tokens — phương án B "Sổ cái"
+$q-green-900: #0A2E23;
+$q-green-800: #0F3B2E;
+$q-green-600: #2F6B4E;
+$q-green-500: #3E7C5A;
+$q-brass-300: #E3C27A;
+$q-brass-500: #B8891F;
+$q-brass-700: #8A6614;
+$q-neutral-0: #FFFFFF;
+$q-neutral-50: #F4F6F2;
+$q-neutral-100: #F3F4EF;
+$q-neutral-200: #D9DED9;
+$q-neutral-300: #CDD3CB;
+$q-neutral-400: #B9C3BD;
+$q-neutral-600: #55625B;
+$q-neutral-700: #3D4A43;
+$q-neutral-900: #1B2420;
+$q-bg-page: $q-neutral-50; // Nền trang
+$q-bg-surface: $q-neutral-0; // Thẻ, khối nội dung
+$q-bg-inverse: $q-green-800; // Header, hero, footer, khối nhấn tối
+$q-bg-inverse-hover: $q-green-900; // Hover nút chính
+$q-text-primary: $q-neutral-900; // Chữ thân
+$q-text-heading: $q-green-800; // Tiêu đề trên nền sáng
+$q-text-secondary: $q-neutral-700; // Chữ phụ
+$q-text-muted: $q-neutral-600; // Chú thích, mã chứng từ
+$q-text-on-inverse: $q-neutral-0; // Chữ trên nền xanh rêu
+$q-link: $q-green-800; // Liên kết
+$q-link-hover: $q-brass-700; // Liên kết khi hover
+$q-accent: $q-brass-500; // Điểm nhấn trang trí, viền focus — không dùng cho chữ nhỏ trên nền sáng
+$q-accent-text: $q-brass-700; // Chữ nhấn màu đồng trên nền sáng
+$q-cta-on-inverse-bg: $q-brass-300; // Nút CTA trên nền tối (chữ xanh rêu)
+$q-border: $q-neutral-200; // Viền thường
+$q-border-strong: $q-neutral-400; // Viền đậm, input
+$q-focus: $q-brass-500; // Viền focus 2px, offset 2px
+$q-success: $q-green-600; // Trạng thái thành công
+$q-font-sans: 'Be Vietnam Pro', 'Segoe UI', system-ui, sans-serif;
+$q-font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+$q-font-brand: 'IBM Plex Sans', 'Be Vietnam Pro', sans-serif;
+$q-space-0: 0;
+$q-space-1: 4px;
+$q-space-2: 8px;
+$q-space-3: 12px;
+$q-space-4: 16px;
+$q-space-5: 20px;
+$q-space-6: 24px;
+$q-space-7: 28px;
+$q-space-8: 32px;
+$q-space-10: 40px;
+$q-space-12: 48px;
+$q-space-14: 56px;
+$q-space-16: 64px;
+$q-space-22: 88px;
+$q-space-24: 96px;
+$q-radius-xs: 3px;
+$q-radius-sm: 6px;
+$q-radius-md: 8px;
+$q-radius-lg: 10px;
+$q-radius-xl: 16px;
+$q-radius-pill: 999px;
+$q-shadow-md: 0 8px 24px rgba(15, 59, 46, 0.10);
+$q-shadow-lg: 0 24px 60px rgba(15, 59, 46, 0.16);
+$q-container: 1240px;
+$q-gutter: 24px;
+$q-section-y: 96px;
+$q-tap-min: 44px;
+$q-button-h: 48px;

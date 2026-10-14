@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qortex — Hướng dẫn nhận diện</title>
+<link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="tokens/tokens.css">
+<style>
+.g-grid{display:grid;gap:var(--q-space-6)}
+.g-2{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.g-4{grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.g-tile{border-radius:var(--q-radius-md);padding:var(--q-space-10) var(--q-space-8);display:flex;align-items:center;justify-content:center;min-height:180px;border:1px solid var(--q-border)}
+.g-tile img{max-width:100%;height:auto}
+.g-sw{border:1px solid var(--q-border);border-radius:var(--q-radius-md);overflow:hidden;background:#fff}
+.g-sw div:first-child{height:88px}
+.g-sw div:last-child{padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+.g-sw b{font-weight:600;color:var(--q-text-heading)}
+.g-row{display:flex;flex-wrap:wrap;gap:var(--q-space-3);align-items:center}
+.g-type>*{padding:var(--q-space-4) 0;border-bottom:1px solid var(--q-border);display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
+.g-type small{flex:0 0 220px;color:var(--q-text-muted);font-family:var(--q-font-mono);font-size:12px}
+.g-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-block:18px}
+section h2{margin-bottom:var(--q-space-6)}
+</style>
+</head>
+<body>
+<header class="q-inverse"><div class="q-container g-head">
+<a href="#" aria-label="Qortex — đầu trang"><img src="logo/qortex-logo-horizontal-reverse.svg" alt="Qortex" height="30" style="display:block;height:30px;width:auto"></a>
+<span style="color:var(--q-text-on-inverse-muted);font-size:14px">Bộ nhận diện cho developer · phương án B "Sổ cái"</span>
+</div></header>
+
+<section class="q-inverse q-section"><div class="q-container" style="display:flex;flex-direction:column;gap:20px;max-width:900px;margin-left:max(24px,calc((100% - var(--q-container))/2 + 24px))">
+<span class="q-eyebrow">Qortex Solutions</span>
+<h1>Sổ sách vững. Tăng trưởng chắc.</h1>
+<p style="margin:0;font-size:20px;color:var(--q-text-on-inverse-muted)">Logo, màu, chữ, khoảng cách và thành phần cơ bản để dựng website. Mọi giá trị đều có trong <span class="q-mono">tokens/tokens.css</span>.</p>
+<div class="g-row"><a class="q-btn q-btn-cta" href="#logo">Xem logo</a><a class="q-btn q-btn-outline" style="color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.4)" href="#mau">Bảng màu</a></div>
+</div></section>
+
+<main>
+<section id="logo" class="q-section"><div class="q-container">
+<h2>Logo</h2>
+<div class="g-grid g-2">
+<div class="g-tile" style="background:#fff"><img src="logo/qortex-logo-horizontal-color.svg" alt="Qortex — logo màu" style="height:72px"></div>
+<div class="g-tile" style="background:var(--q-green-800);border-color:transparent"><img src="logo/qortex-logo-horizontal-reverse.svg" alt="Qortex — logo trên nền tối" style="height:72px"></div>
+</div>
+<div class="g-grid g-4" style="margin-top:24px">
+<div class="g-tile" style="background:#fff"><img src="logo/qortex-symbol-color.svg" alt="Biểu tượng màu" width="96" height="96"></div>
+<div class="g-tile" style="background:var(--q-bg-page)"><img src="logo/qortex-app-icon.svg" alt="Biểu tượng ứng dụng" width="96" height="96"></div>
+<div class="g-tile" style="background:#fff"><img src="logo/qortex-logo-horizontal-mono-dark.svg" alt="Logo một màu" style="height:40px"></div>
+<div class="g-tile" style="background:#fff"><img src="logo/qortex-wordmark-color.svg" alt="Chữ QORTEX" style="height:32px"></div>
+</div>
+<p class="q-text-muted" style="color:var(--q-text-muted);margin-top:16px">Vùng trống tối thiểu bằng chiều cao chữ hoa. Logo ngang cao tối thiểu 24 px. Không đổi màu, kéo méo, xoay, thêm bóng.</p>
+</div></section>
+
+<section id="mau" class="q-section" style="background:#fff"><div class="q-container">
+<h2>Màu</h2>
+<div class="g-grid g-4">
+<div class="g-sw"><div style="background:#0F3B2E"></div><div><b>Xanh Sổ cái</b><span class="q-mono">#0F3B2E · --q-green-800</span><span style="font-size:13px;color:var(--q-text-muted)">Màu chính, nền tối, tiêu đề</span></div></div>
+<div class="g-sw"><div style="background:#B8891F"></div><div><b>Đồng thau</b><span class="q-mono">#B8891F · --q-brass-500</span><span style="font-size:13px;color:var(--q-text-muted)">Logo, focus, đồ họa</span></div></div>
+<div class="g-sw"><div style="background:#E3C27A"></div><div><b>Đồng nhạt</b><span class="q-mono">#E3C27A · --q-brass-300</span><span style="font-size:13px;color:var(--q-text-muted)">Nút CTA trên nền tối</span></div></div>
+<div class="g-sw"><div style="background:#8A6614"></div><div><b>Đồng đậm</b><span class="q-mono">#8A6614 · --q-brass-700</span><span style="font-size:13px;color:var(--q-text-muted)">Chữ nhấn, link hover</span></div></div>
+<div class="g-sw"><div style="background:#0A2E23"></div><div><b>Xanh rêu đậm</b><span class="q-mono">#0A2E23 · --q-green-900</span><span style="font-size:13px;color:var(--q-text-muted)">Hover nút chính</span></div></div>
+<div class="g-sw"><div style="background:#2F6B4E"></div><div><b>Xanh trung</b><span class="q-mono">#2F6B4E · --q-green-600</span><span style="font-size:13px;color:var(--q-text-muted)">Thành công</span></div></div>
+<div class="g-sw"><div style="background:#3E7C5A"></div><div><b>Xanh Lá</b><span class="q-mono">#3E7C5A · --q-green-500</span><span style="font-size:13px;color:var(--q-text-muted)">Biểu đồ, minh họa</span></div></div>
+<div class="g-sw"><div style="background:#1B2420"></div><div><b>Mực</b><span class="q-mono">#1B2420 · --q-neutral-900</span><span style="font-size:13px;color:var(--q-text-muted)">Chữ thân</span></div></div>
+<div class="g-sw"><div style="background:#3D4A43"></div><div><b>Chữ phụ</b><span class="q-mono">#3D4A43 · --q-neutral-700</span><span style="font-size:13px;color:var(--q-text-muted)">Đoạn mô tả</span></div></div>
+<div class="g-sw"><div style="background:#55625B"></div><div><b>Chú thích</b><span class="q-mono">#55625B · --q-neutral-600</span><span style="font-size:13px;color:var(--q-text-muted)">Chữ nhỏ, mã</span></div></div>
+<div class="g-sw"><div style="background:#D9DED9"></div><div><b>Viền</b><span class="q-mono">#D9DED9 · --q-neutral-200</span><span style="font-size:13px;color:var(--q-text-muted)">Viền thẻ, đường kẻ</span></div></div>
+<div class="g-sw"><div style="background:#F4F6F2"></div><div><b>Nền trang</b><span class="q-mono">#F4F6F2 · --q-neutral-50</span><span style="font-size:13px;color:var(--q-text-muted)">Nền chung</span></div></div>
+</div>
+</div></section>
+
+<section class="q-section"><div class="q-container">
+<h2>Chữ</h2>
+<div class="g-type">
+<div><small>Display · clamp 38–68 px</small><span style="font-size:var(--q-text-display-size);line-height:1.08;font-weight:600;letter-spacing:-0.01em;color:var(--q-text-heading)">Quản trị doanh nghiệp</span></div>
+<div><small>H2 · clamp 30–44 px</small><span style="font-size:var(--q-text-h2-size);line-height:1.15;font-weight:600;color:var(--q-text-heading)">Một nền tảng, đủ phân hệ</span></div>
+<div><small>H3 · 20 px / 600</small><span style="font-size:20px;font-weight:600;color:var(--q-text-heading)">Bán hàng, mua hàng, kho, kế toán</span></div>
+<div><small>Lead · 20 px / 400</small><span style="font-size:20px;color:var(--q-text-secondary)">Đầy đủ dấu tiếng Việt: ăâđêôơư ặẫờữỹ.</span></div>
+<div><small>Body · 16 px / 1.6</small><span>Mọi chứng từ được ghi nhận một lần, đi thẳng vào sổ cái và báo cáo.</span></div>
+<div><small>Eyebrow · 12 px / 600</small><span class="q-eyebrow">Giải pháp ngành</span></div>
+<div><small>Mono · IBM Plex Mono 500</small><span class="q-mono" style="color:var(--q-text-muted)">BG-2026-0112 · 01 · 02 · 03</span></div>
+</div>
+</div></section>
+
+<section class="q-section" style="background:#fff"><div class="q-container">
+<h2>Thành phần</h2>
+<div class="g-grid g-2">
+<div class="q-card" style="display:flex;flex-direction:column;gap:16px">
+<span class="q-eyebrow">Nút trên nền sáng</span>
+<div class="g-row"><button type="button" class="q-btn q-btn-primary">Đặt lịch tư vấn</button><button type="button" class="q-btn q-btn-outline">Tìm hiểu thêm</button></div>
+<label for="g-mail" style="font-size:14px;font-weight:600;color:var(--q-text-heading)">Email công việc</label>
+<input id="g-mail" class="q-input" type="email" placeholder="ten@congty.vn">
+</div>
+<div class="q-card q-inverse" style="background:var(--q-bg-inverse);display:flex;flex-direction:column;gap:16px;border-color:transparent">
+<span class="q-eyebrow">Nút trên nền tối</span>
+<div class="g-row"><a href="#" class="q-btn q-btn-cta">Đặt lịch tư vấn</a></div>
+<p style="margin:0;color:var(--q-text-on-inverse-muted)">Khối tối dùng nút đồng nhạt, chữ xanh rêu. Focus bàn phím: viền 2 px đồng thau.</p>
+</div>
+</div>
+</div></section>
+</main>
+
+<footer class="q-inverse"><div class="q-container g-head">
+<img src="logo/qortex-logo-horizontal-reverse.svg" alt="Qortex" style="height:24px;width:auto">
+<span style="color:var(--q-text-on-inverse-muted);font-size:13px">Công ty TNHH Giải pháp Qortex · Qortex Solutions Co., Ltd</span>
+</div></footer>
+</body>
+</html>

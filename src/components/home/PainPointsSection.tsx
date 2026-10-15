@@ -1,4 +1,4 @@
-import { Section, Container, Eyebrow } from "@/components/ui";
+import { Section, Container } from "@/components/ui";
 
 const PAIN_POINTS = [
   {
@@ -42,10 +42,9 @@ const PAIN_POINTS = [
 
 export function PainPointsSection() {
   return (
-    <Section id="pain-points" variant="default">
+      <Section id="pain-points" variant="warm">
       <Container>
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <Eyebrow className="mb-3">Bài toán</Eyebrow>
           <h2 className="text-q-h2 text-q-text-heading">
             Bài toán quen thuộc của doanh nghiệp đang lớn
           </h2>

@@ -11,11 +11,8 @@ export function PlatformPageCTA() {
     <Section id="platform-cta" variant="inverse">
       <Container>
         <div className="max-w-2xl mx-auto text-center">
-          <Eyebrow onInverse className="mb-3">
-            Demo 60 phút
-          </Eyebrow>
           <h2 className="text-q-h2 text-q-text-on-inverse">
-            Chạy quy trình thật của doanh nghiệp bạn trên Qortex
+            Chạy thử quy trình thật của doanh nghiệp bạn trên Qortex
           </h2>
           <p className="q-lead mt-5 text-q-text-on-inverse-muted">
             Chuyên gia Qortex sẽ tìm hiểu nghiệp vụ của bạn, chuẩn bị demo theo

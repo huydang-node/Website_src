@@ -21,6 +21,7 @@ module.exports = {
           "neutral-700": "#3D4A43",
           "neutral-900": "#1B2420",
           "bg-page": "var(--q-bg-page)",
+          "bg-page-alt": "var(--q-bg-page-alt)",
           "bg-surface": "var(--q-bg-surface)",
           "bg-inverse": "var(--q-bg-inverse)",
           "bg-inverse-hover": "var(--q-bg-inverse-hover)",

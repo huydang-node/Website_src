@@ -1,4 +1,4 @@
-import { Section, Container, Eyebrow, LinkButton } from "@/components/ui";
+import { Section, Container, LinkButton } from "@/components/ui";
 
 export function PlatformHero() {
   return (
@@ -9,11 +9,8 @@ export function PlatformHero() {
     >
       <Container>
         <div className="max-w-3xl">
-          <Eyebrow onInverse className="mb-4">
-            Nền tảng Qortex
-          </Eyebrow>
           <h1 className="text-q-display text-q-text-on-inverse text-wrap-balance">
-            Một lõi ERP mạnh mẽ, nhiều module gắn vào theo nhu cầu doanh nghiệp.
+            Nền tảng Qortex 
           </h1>
           <p className="q-lead mt-6 text-q-text-on-inverse-muted max-w-2xl">
             Từ sổ cái theo chế độ Việt Nam đến quản lý kho nhiều chi nhánh — tất cả

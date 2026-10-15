@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 export interface SectionProps {
   children: React.ReactNode;
   className?: string;
-  variant?: "default" | "surface" | "inverse" | "alt";
+  variant?: "default" | "surface" | "inverse" | "alt" | "warm";
   tight?: boolean;
   id?: string;
   as?: "section" | "div" | "article";
@@ -25,8 +25,8 @@ export function Section({
         {
           "bg-q-bg-page": variant === "default",
           "bg-q-bg-surface": variant === "surface",
+          "bg-q-bg-page-alt": variant === "alt" || variant === "warm",
           "q-inverse": variant === "inverse",
-          "bg-q-bg-surface-alt": variant === "alt",
         },
         className
       )}

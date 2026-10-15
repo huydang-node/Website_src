@@ -13,15 +13,12 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text content */}
           <div className="max-w-xl">
-            <p className="q-eyebrow text-q-cta-on-inverse-bg mb-4">
-              Nền tảng ERP
-            </p>
             <h1
               id="hero-heading"
               className="text-q-display text-q-text-on-inverse text-wrap-balance"
             >
               Hệ thống quản trị chuẩn doanh nghiệp lớn, vừa vặn với doanh
-              nghiệp đang lớn.
+              nghiệp đang lớn
             </h1>
             <p className="q-lead mt-6 text-q-text-on-inverse-muted max-w-lg">
               Nền tảng ERP xây trên nền tuân thủ vững chắc, dữ liệu thuộc về

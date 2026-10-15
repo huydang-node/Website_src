@@ -33,7 +33,6 @@ export function IndustryModules({ relatedModuleIds }: IndustryModulesProps) {
       <Container>
         {/* Section header */}
         <div className="max-w-2xl mb-10">
-          <p className="q-eyebrow mb-3">Module liên quan</p>
           <h2 className="text-q-h2 text-q-text-heading">
             Những module Qortex xử lý bài toán này
           </h2>

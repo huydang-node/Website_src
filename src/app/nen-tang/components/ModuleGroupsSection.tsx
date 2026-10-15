@@ -1,4 +1,4 @@
-import { Section, Container, Eyebrow } from "@/components/ui";
+import { Section, Container } from "@/components/ui";
 import { MODULE_GROUPS } from "@/data/platform";
 
 export function ModuleGroupsSection() {
@@ -7,9 +7,8 @@ export function ModuleGroupsSection() {
       <Container>
         {/* Section heading */}
         <div className="max-w-3xl mb-12">
-          <Eyebrow className="mb-3">Các nhóm module</Eyebrow>
           <h2 className="text-q-h2 text-q-text-heading">
-            Sáu nhóm module, một lõi dữ liệu chung
+            Nhiều nhóm module trên một lõi dữ liệu chung
           </h2>
           <p className="q-lead mt-4 text-q-text-secondary">
             Mỗi nhóm đảm nhận một mảng nghiệp vụ, cùng ghi nhận dữ liệu trên một

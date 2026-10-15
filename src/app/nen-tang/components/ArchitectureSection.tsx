@@ -1,4 +1,4 @@
-import { Section, Container, Eyebrow, LinkButton } from "@/components/ui";
+import { Section, Container, LinkButton } from "@/components/ui";
 import { ARCHITECTURE_HIGHLIGHTS } from "@/data/platform";
 
 export function ArchitectureSection() {
@@ -8,10 +8,9 @@ export function ArchitectureSection() {
         <div className="grid lg:grid-cols-[1fr_1.4fr] gap-12 lg:gap-16 items-start">
           {/* Left: Heading + intro */}
           <div className="lg:sticky lg:top-24">
-            <Eyebrow className="mb-3">Kiến trúc</Eyebrow>
-            <h2 className="text-q-h2 text-q-text-heading">
-              Cho trưởng IT — dành riêng cho người cần chi tiết kỹ thuật
-            </h2>
+          <h2 className="text-q-h2 text-q-text-heading">
+              Kiến trúc 
+          </h2>
             <p className="q-lead mt-5 text-q-text-secondary">
               Triển khai cloud dùng chung hoặc riêng, dữ liệu mở, mở rộng bằng
               plugin mà không phải sửa lõi. Không nêu tên công nghệ lõi ở đây —

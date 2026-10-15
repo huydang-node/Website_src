@@ -9,16 +9,20 @@ import {
   TrustSignalsSection,
   PageCTASection,
 } from "@/components/home";
+import { MotionProvider } from "@/components/MotionProvider";
 
 export const metadata: Metadata = {
-  title: "Qortex — Nền tảng ERP cho doanh nghiệp Việt Nam",
+  title: "Qortex: Nền tảng ERP cho doanh nghiệp Việt Nam",
   description:
-    "Hệ thống quản trị chuẩn doanh nghiệp lớn, vừa vặn với doanh nghiệp đang lớn. Nền tảng ERP xây trên nền tuân thủ vững chắc, dữ liệu thuộc về doanh nghiệp.",
+    "Hệ thống quản trị chuẩn doanh nghiệp lớn, vừa vặn với doanh nghiệp đang lớn Nền tảng ERP xây trên nền tuân thủ vững chắc, dữ liệu thuộc về doanh nghiệp.",
 };
 
 export default function HomePage() {
   return (
     <main>
+      {/* Motion observer — runs once, watches [data-reveal] elements */}
+      <MotionProvider />
+
       {/* Section 1: Hero */}
       <HeroSection />
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Section, Container, Eyebrow, Button, Input, Select, Textarea } from "@/components/ui";
+import { Section, Container, Button, Input, Select, Textarea } from "@/components/ui";
 
 interface FormData {
   name: string;
@@ -123,12 +123,9 @@ export function PageCTASection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Copy */}
           <div>
-            <Eyebrow onInverse className="mb-3">
-              Demo 60 phút
-            </Eyebrow>
             <h2 className="text-q-h2 text-q-text-on-inverse">
-              Cho chúng tôi 60 phút, chúng tôi sẽ chạy quy trình thật của
-              doanh nghiệp bạn trên Qortex.
+              Demo 60 phút — cho chúng tôi chạy quy trình thật của doanh
+              nghiệp bạn trên Qortex.
             </h2>
             <p className="q-lead mt-5 text-q-text-on-inverse-muted">
               Không phải demo generic. Chúng tôi sẽ hỏi về nghiệp vụ của bạn

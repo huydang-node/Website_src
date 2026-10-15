@@ -23,7 +23,6 @@ export function IndustryFlow({ solution }: IndustryFlowProps) {
       <Container>
         {/* Section header */}
         <div className="max-w-2xl mb-10">
-          <p className="q-eyebrow mb-3">Quy trình xử lý</p>
           <h2 className="text-q-h2 text-q-text-heading">{solution.title}</h2>
           <p className="q-lead text-q-text-secondary mt-4">
             {solution.description}

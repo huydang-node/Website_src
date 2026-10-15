@@ -1,4 +1,4 @@
-import { Section, Container, Eyebrow, LinkButton } from "@/components/ui";
+import { Section, Container, LinkButton } from "@/components/ui";
 
 const MODULES = [
   {
@@ -40,10 +40,9 @@ export function SolutionOverviewSection() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text content */}
           <div>
-            <Eyebrow className="mb-3">Lời giải</Eyebrow>
-            <h2 className="text-q-h2 text-q-text-heading">
-              Một hệ thống duy nhất nối toàn bộ hoạt động kinh doanh
-            </h2>
+          <h2 className="text-q-h2 text-q-text-heading">
+              Lời giải: Một hệ thống duy nhất nối toàn bộ hoạt động kinh doanh
+          </h2>
             <p className="q-lead mt-5 text-q-text-secondary max-w-xl">
               Từ báo giá đến báo cáo tài chính, mọi nghiệp vụ được ghi nhận
               liền mạch — đúng chuẩn mực Việt Nam ngay từ gốc.

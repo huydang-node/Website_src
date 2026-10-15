@@ -91,9 +91,8 @@ export function IndustryPainPoints({ painPoints }: IndustryPainPointsProps) {
       <Container>
         {/* Section header */}
         <div className="max-w-2xl mb-10">
-          <p className="q-eyebrow mb-3">Bài toán đặc thù</p>
           <h2 className="text-q-h2 text-q-text-heading">
-            Thực trạng phổ biến trong ngành này
+            Bài toán đặc thù 
           </h2>
         </div>
 

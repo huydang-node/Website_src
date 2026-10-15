@@ -70,6 +70,12 @@ export default function RootLayout({
   return (
     <html lang="vi" className={`${beVietnamPro.variable} ${ibmPlexMono.variable}`}>
       <body>
+        {/* Motion gate: enables CSS animations only when JS is available */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.add('js')",
+          }}
+        />
         <Layout>{children}</Layout>
       </body>
     </html>

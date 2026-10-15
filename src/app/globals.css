@@ -20,6 +20,7 @@
 
   /* Màu theo vai trò */
   --q-bg-page: var(--q-neutral-50);
+  --q-bg-page-alt: #F8F6F1;
   --q-bg-surface: var(--q-neutral-0);
   --q-bg-surface-alt: var(--q-neutral-100);
   --q-bg-inverse: var(--q-green-800);

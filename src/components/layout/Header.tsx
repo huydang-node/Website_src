@@ -61,7 +61,7 @@ export function Header() {
             aria-label="Main navigation"
           >
             {NAV_ITEMS.map((item) =>
-              item.children ? (
+              item.children || item.type === "industries" ? (
                 <div
                   key={item.label}
                   className="relative"
@@ -105,43 +105,43 @@ export function Header() {
                       onMouseEnter={() => handleDropdownEnter(item.label)}
                       onMouseLeave={handleDropdownLeave}
                     >
-                      <div className="bg-q-neutral-0 border border-q-border rounded-q-md shadow-q-lg p-6 min-w-[320px]">
-                        <p className="q-eyebrow mb-3">Giải pháp theo ngành</p>
-                        <div className="grid grid-cols-2 gap-2 mb-4">
-                          {INDUSTRIES.map((ind) => (
-                            <Link
-                              key={ind.id}
-                              href={ind.href}
-                              className="flex items-start gap-3 p-3 rounded-q-sm hover:bg-q-bg-surface-alt transition-colors no-underline group"
-                              onClick={() => setOpenDropdown(null)}
-                            >
-                              <IndustryDot industry={ind.dot} />
-                              <span className="text-small font-semibold text-q-text-primary group-hover:text-q-link transition-colors">
+                      <div className="bg-q-neutral-0 border border-q-border rounded-q-md shadow-q-lg p-2 min-w-[200px]">
+                        {item.type === "industries" ? (
+                          /* Industries list dropdown */
+                          <div className="flex flex-col gap-0">
+                            {INDUSTRIES.map((ind) => (
+                              <Link
+                                key={ind.id}
+                                href={ind.href}
+                                className="flex items-center px-3 py-2.5 rounded-q-sm hover:bg-q-bg-surface-alt transition-colors no-underline text-small font-medium text-q-text-primary"
+                                onClick={() => setOpenDropdown(null)}
+                              >
                                 {ind.label}
-                              </span>
-                            </Link>
-                          ))}
-                        </div>
-                        <hr className="q-divider mb-4" />
-                        <div className="flex flex-col gap-1">
-                          {item.children!.map((child) => (
-                            <Link
-                              key={child.href}
-                              href={child.href}
-                              className="flex flex-col px-3 py-2 rounded-q-sm hover:bg-q-bg-surface-alt transition-colors no-underline"
-                              onClick={() => setOpenDropdown(null)}
-                            >
-                              <span className="text-small font-semibold text-q-text-primary">
-                                {child.label}
-                              </span>
-                              {child.description && (
-                                <span className="text-caption text-q-text-muted">
-                                  {child.description}
+                              </Link>
+                            ))}
+                          </div>
+                        ) : (
+                          /* Default dropdown — list of children */
+                          <div className="flex flex-col gap-1">
+                            {item.children!.map((child) => (
+                              <Link
+                                key={child.href}
+                                href={child.href}
+                                className="flex flex-col px-3 py-2 rounded-q-sm hover:bg-q-bg-surface-alt transition-colors no-underline"
+                                onClick={() => setOpenDropdown(null)}
+                              >
+                                <span className="text-small font-semibold text-q-text-primary">
+                                  {child.label}
                                 </span>
-                              )}
-                            </Link>
-                          ))}
-                        </div>
+                                {child.description && (
+                                  <span className="text-caption text-q-text-muted">
+                                    {child.description}
+                                  </span>
+                                )}
+                              </Link>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     </div>
                   )}

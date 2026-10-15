@@ -1,5 +1,5 @@
 import React from "react";
-import { Section, Container, Eyebrow, Tag } from "@/components/ui";
+import { Section, Container, Tag } from "@/components/ui";
 import Link from "next/link";
 
 type IndustryTag = "khach-san" | "san-xuat" | "ban-le" | "dich-vu";
@@ -81,9 +81,8 @@ export function IndustryPreviewSection() {
     <Section id="industry-preview" variant="surface">
       <Container>
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <Eyebrow className="mb-3">Ngành</Eyebrow>
           <h2 className="text-q-h2 text-q-text-heading">
-            Giải pháp theo đặc thù từng ngành
+              Giải pháp theo đặc thù từng ngành
           </h2>
           <p className="q-lead mt-4 text-q-text-secondary">
             Mỗi ngành có bài toán riêng — Qortex hiểu và xử lý đúng trọng tâm.

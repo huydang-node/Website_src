@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Section, Container, Eyebrow, LinkButton } from "@/components/ui";
+import { Section, Container, LinkButton } from "@/components/ui";
 
 const TABS = [
   {
@@ -53,12 +53,11 @@ export function BusinessFlowSection() {
   const current = TABS[activeTab];
 
   return (
-    <Section id="business-flow" variant="alt">
+      <Section id="business-flow" variant="alt">
       <Container>
         <div className="text-center max-w-2xl mx-auto mb-10">
-          <Eyebrow className="mb-3">Quy trình</Eyebrow>
           <h2 className="text-q-h2 text-q-text-heading">
-            Dòng chảy nghiệp vụ liền mạch
+              Dòng chảy nghiệp vụ liền mạch
           </h2>
           <p className="q-lead mt-4 text-q-text-secondary">
             Mỗi bước tự động sinh bút toán định khoản — không cần kế toán viên
@@ -108,7 +107,6 @@ export function BusinessFlowSection() {
           <div className="flex items-center justify-between gap-2 overflow-x-auto pb-4">
             {current.steps.map((step, i) => (
               <div key={step.name} className="flex items-center flex-1 min-w-0">
-                {/* Step card */}
                 <div className="flex-1 min-w-0">
                   <div
                     className={`
@@ -127,14 +125,7 @@ export function BusinessFlowSection() {
                       {step.detail}
                     </p>
                   </div>
-
-                  {/* Step number */}
-                  <p className="text-center text-caption text-q-text-muted q-mono mt-2">
-                    {String(i + 1).padStart(2, "0")}
-                  </p>
                 </div>
-
-                {/* Arrow connector */}
                 {i < current.steps.length - 1 && (
                   <div className="flex-shrink-0 px-2" aria-hidden="true">
                     <svg

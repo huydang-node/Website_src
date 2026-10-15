@@ -1,4 +1,4 @@
-import { Section, Container, Eyebrow, LinkButton } from "@/components/ui";
+import { Section, Container } from "@/components/ui";
 import Link from "next/link";
 
 const TRUST_SIGNALS = [
@@ -8,7 +8,7 @@ const TRUST_SIGNALS = [
     description:
       "Xử lý tình huống khó: trả hàng một phần, chênh lệch tỷ giá, khóa sổ kỳ, đối chiếu công nợ đa cấp. Không phải phần mềm 'nông' chỉ quản lý được vài nghiệp vụ đơn giản.",
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
         <circle cx="12" cy="12" r="3" />
       </svg>
@@ -20,7 +20,7 @@ const TRUST_SIGNALS = [
     description:
       "Nền tảng Qortex Books được xây dựng và vận hành nhiều năm, xử lý hàng nghìn chứng từ mỗi ngày. Kiến trúc mở, sẵn sàng mở rộng theo nhu cầu doanh nghiệp.",
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
         <path d="m9 12 2 2 4-4" />
       </svg>
@@ -32,7 +32,7 @@ const TRUST_SIGNALS = [
     description:
       "Kiến trúc sư phần mềm doanh nghiệp — những người đã triển khai ERP cho doanh nghiệp lớn, hiểu cả góc nhìn nghiệp vụ lẫn kỹ thuật. Không phải đội ngũ chỉ biết lập trình.",
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
         <circle cx="9" cy="7" r="4" />
         <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
@@ -43,10 +43,9 @@ const TRUST_SIGNALS = [
 
 export function TrustSignalsSection() {
   return (
-    <Section id="trust-signals" variant="default">
+    <Section id="trust-signals" variant="warm">
       <Container>
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <Eyebrow className="mb-3">Uy tín</Eyebrow>
           <h2 className="text-q-h2 text-q-text-heading">
             Vì sao tin tưởng Qortex
           </h2>
@@ -56,36 +55,40 @@ export function TrustSignalsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        {/* Horizontal strip — dividers between items */}
+        <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-q-border max-w-4xl mx-auto">
           {TRUST_SIGNALS.map((signal) => (
-            <article
+            <div
               key={signal.id}
-              className="text-center q-card p-8 hover:border-q-border-strong hover:bg-q-bg-surface-alt transition-colors duration-q-normal"
+              className="py-8 px-6 first:pl-0 last:pr-0 first:py-0 last:py-0 md:py-0"
             >
-              <div className="w-14 h-14 rounded-full bg-q-bg-surface-alt flex items-center justify-center text-q-green-800 mx-auto mb-5">
-                {signal.icon}
+              <div className="text-center">
+                {/* Icon — inline, no circle wrapper */}
+                <div className="inline-flex text-q-green-600 mb-4">
+                  {signal.icon}
+                </div>
+                <h3 className="text-h5 text-q-text-primary mb-2 font-semibold">
+                  {signal.title}
+                </h3>
+                <p className="text-small text-q-text-secondary leading-relaxed">
+                  {signal.description}
+                </p>
               </div>
-              <h3 className="text-h4 text-q-text-primary mb-3">
-                {signal.title}
-              </h3>
-              <p className="text-small text-q-text-secondary leading-relaxed">
-                {signal.description}
-              </p>
-            </article>
+            </div>
           ))}
         </div>
 
         {/* About link */}
-        <div className="mt-8 text-center">
-          <p className="text-body text-q-text-secondary">
-            Tìm hiểu thêm{" "}
-            <Link
-              href="/ve-chung-toi"
-              className="text-q-link hover:text-q-brass-700 font-semibold transition-colors"
-            >
-              về đội ngũ Qortex
-            </Link>
-          </p>
+        <div className="mt-10 text-center">
+          <Link
+            href="/ve-chung-toi"
+            className="inline-flex items-center gap-2 text-body text-q-link hover:text-q-brass-700 font-semibold transition-colors"
+          >
+            Tìm hiểu về đội ngũ Qortex
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </Link>
         </div>
       </Container>
     </Section>

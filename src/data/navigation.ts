@@ -7,6 +7,8 @@ export interface NavItem {
   label: string;
   href: string;
   description?: string;
+  /** "industries" = dropdown hiển thị 4 ngành dạng grid */
+  type?: "industries";
   /** Trường này set thì item trở thành dropdown */
   children?: NavItem[];
 }
@@ -27,52 +29,29 @@ export interface CTAItem {
 }
 
 /* ─── Navigation items ─── */
+/*
+  Header order: Nền tảng | Giải pháp (dropdown) | Vì sao Qortex | Về chúng tôi | [Đặt lịch demo]
+  INDUSTRIES dropdown: 4 ngành cùng cấp, không có trang /giai-phap riêng (xác nhận brief).
+*/
 
 export const NAV_ITEMS: NavItem[] = [
   {
-    label: "Giải pháp theo ngành",
+    label: "Nền tảng",
+    href: "/nen-tang",
+  },
+  {
+    label: "Giải pháp",
     href: "/giai-phap",
+    type: "industries",
     description: "Chọn ngành để xem giải pháp phù hợp",
   },
   {
-    label: "Tính năng",
-    href: "/tinh-nang",
-    description: "Danh sách đầy đủ các tính năng của Qortex",
+    label: "Vì sao Qortex",
+    href: "/vi-sao-qortex",
   },
   {
-    label: "Bảng giá",
-    href: "/bang-gia",
-    description: "Gói dịch vụ và mức giá minh bạch",
-  },
-  {
-    label: "Về Qortex",
-    href: "/ve-qortex",
-    children: [
-      {
-        label: "Câu chuyện",
-        href: "/ve-qortex/cau-chuyen",
-        description: "Tầm nhìn và sứ mệnh của Qortex",
-      },
-      {
-        label: "Đội ngũ",
-        href: "/ve-qortex/doi-ngu",
-        description: "Con người đứng sau nền tảng",
-      },
-      {
-        label: "Tuyển dụng",
-        href: "/ve-qortex/tuyen-dung",
-        description: "Gia nhập đội ngũ Qortex",
-      },
-      {
-        label: "Blog",
-        href: "/ve-qortex/blog",
-        description: "Tin tức, bài viết chuyên sâu",
-      },
-    ],
-  },
-  {
-    label: "Liên hệ",
-    href: "/lien-he",
+    label: "Về chúng tôi",
+    href: "/ve-chung-toi",
   },
 ];
 

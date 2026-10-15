@@ -27,15 +27,11 @@ export function IndustryHeroOverview() {
   return (
     <Section variant="default" className="pt-16 pb-12 md:pt-20 md:pb-16">
       <Container>
-        {/* Eyebrow */}
-        <p className="q-eyebrow mb-4">Giải pháp theo ngành</p>
-
-        {/* Heading */}
         <h1
           className="text-q-display text-q-text-heading mb-6 max-w-2xl"
           style={{ fontSize: "var(--q-text-display-size)", lineHeight: "var(--q-text-display-line)" }}
         >
-          Mỗi ngành có bài toán riêng — Qortex hiểu và xử lý đúng trọng tâm
+          Giải pháp theo ngành — Mỗi ngành có bài toán riêng, Qortex hiểu và xử lý đúng trọng tâm
         </h1>
 
         {/* Subtitle */}
@@ -74,9 +70,6 @@ export function IndustryHeroDetail({
           <BackArrow />
           Tất cả giải pháp theo ngành
         </Link>
-
-        {/* Eyebrow */}
-        <p className="q-eyebrow mb-4">{eyebrow}</p>
 
         {/* Heading */}
         <h1
